@@ -1,5 +1,5 @@
 // ============================================
-//SolbixSniper TRADING BOT - Complete Implementation
+//Trojan TRADING BOT - Complete Implementation
 // with Debug Logging & Professional Messages 
 // ============================================
 import { Telegraf, Markup } from 'telegraf';
@@ -1241,10 +1241,8 @@ async function showMainMenu(ctx, edit = false) {
     : `💼 *Wallet ${session.activeWalletIndex + 1}/${session.wallets.length}*\n\`${shortenAddress(wallet.publicKey)}\`\n💰 ${balance?.toFixed(4) || '?'} SOL ${solPrice ? `($${usdValue.toFixed(2)})` : ''} ${errMsg}`;
 
   const text = `
-🚀 *Welcome to solbis Trading Bot* 🤖
+🚀 *Welcome to Trojan Trading Bot* 🤖
 
-I'm your Web3 execution engine.
-AI-driven. Battle-tested. Locked down.
 ━━━━━━━━━━━━━━━━━━
 *What I do for you:* ⬇️
 📊 Scan the market to tell you what to buy, ignore, or stalk
@@ -1256,7 +1254,6 @@ AI-driven. Battle-tested. Locked down.
 ━━━━━━━━━━━━━━━━━━
 ${walletLine}
 
-🏦 *CASH & STABLE COIN BANK*
 Paste any Solana contract address to analyze
   `;
 
